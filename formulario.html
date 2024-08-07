@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+rel="stylesheet">
+
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <link rel="stylesheet" href="stylo.css">
+
+ 
+</head>
+
+</head>
+<body>
+
+            <div class="container z-depth-5">
+        
+        <div class="title center card-panel hoverable #1b5e20 green darken-4" style="color: #fff" >Registro de Usuarios</div>
+        <i class="material-icons">person_add</i>
+               <form id="form-validation" novalidate>
+
+                <div class="contenedor">
+                  
+                </div>
+                <div class="input-field">
+                    <select>
+                      <option value="" disabled selected>Tipo de Documento</option>
+                      <option value="1">Cédula</option>
+                      <option value="2">Tarjeta de Identidad</option>
+                      <option value="3">Cédula de Extranjería</option>
+                    </select>
+                    <label>Documento de Identidad</label>
+                  </div>
+                
+                                
+                <!-- <div class="columna"> -->
+            <!-- <div class="form-group">
+                <span>Tipo de Documento:</span>
+                <input type="text z-depth-3" placeholder="Ingrese Tipo de Documento" required>
+                <small>Por favor ingrese el Tipo de Documento</small>
+            </div class="columna">
+            </div> -->
+            <div class="columna">
+            <div class="form-group">
+                <span>Número de Documento:</span>
+                <input type="number z-depth-5" placeholder="Ingrese Documento" maxlength="10" required>
+                <small>Por favor ingrese el Número de Documento</small>
+            </div class="columna">
+            </div>
+            <div class="form-group">
+                <span>Nombre:</span>
+                <input type="text z-depth-3" placeholder="Ingrese Nombre" required>
+                <small>Por favor ingres el Nombre</small>
+            
+            </div>
+            
+            <div class="form-group">
+                <span>Usuario:</span>
+                <input type="text z-depth-3" placeholder="Ingrese Usuario" required>
+                <small>Por favor ingrese el Usuario</small>
+            
+            <div class="form-group">
+                <span>Email:</span>
+                <input type="email z-depth-3" placeholder="Ingrese Email" required>
+                <small>Por favor ingrese el Email</small>
+                
+            </div>
+            <div class="form-group">
+                <span>Teléfono:</span>
+                <input type="number z-depth-2" placeholder="Ingrese Teléfono" required>
+                <small>Por favor ingrese el número de Teléfono</small>
+                
+            </div>
+            <div class="form-group">
+                <span>Contraseña:</span>
+                <input type="password z-depth-3" placeholder="Ingrese su Contraseña" required>
+                <small>Por favor ingrese su Contraseña</small>
+                
+            </div>
+            <div class="form-group">
+                <span>Confirmar Contraseña:</span>
+                <input type="password z-depth-3" placeholder="Ingrese su Contraseña" required>
+                <small>Por favor confirme su Contraseña</small>
+                
+            </div>
+            <div class="button waves-effect waves-light btn #1b5e20 green darken-4" style="color:#fff">
+                <input type="submit" value="Registrarse">
+                
+            </div>
+        </form>
+
+    </div>
+
+    <script>
+        const addform = document.getElementById
+        ("form-validation");
+        addform.addEventListener("submit", (e)=>{
+            if(addform.checkValidity() ===false){
+                e.preventDefault();
+                e.stopPropagation();
+                addform.classList.add('was-validate');
+                return false
+
+            }
+        })
+    </script>
+   
+
+       <!-- Compiled and minified JavaScript -->
+ <script 
+ src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+</script>  
+<script > document.addEventListener('DOMContentLoaded', function() {
+    var sel=document.querySelectorAll('select');
+    M.FormSelect.init(sel);
+  });
+    </script>
+     </script>
+    
+    </body>
+    </html>
